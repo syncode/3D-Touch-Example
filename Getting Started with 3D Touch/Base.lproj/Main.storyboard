@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A278b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fvI-Ap-Cia">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
+    </dependencies>
+    <scenes>
+        <!--Root View-->
+        <scene sceneID="Q4D-Zf-t6B">
+            <objects>
+                <viewController id="Pbc-3U-L3x" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OiB-rU-7NO"/>
+                        <viewControllerLayoutGuide type="bottom" id="I5W-cA-22w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2t3-ox-32e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="an6-f5-dT7">
+                                <rect key="frame" x="87" y="305" width="200" height="57"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Tap here for details"/>
+                                <connections>
+                                    <segue destination="1Gn-th-Qar" kind="show" id="sU9-hg-4B1">
+                                        <segue key="commit" inheritsFrom="parent" id="xaV-QD-J6P"/>
+                                        <segue key="preview" destination="1Gn-th-Qar" identifier="peekIdentifier" id="LNd-aR-MrI"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Root View" id="f4Q-gY-AXp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ivP-Qv-frV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1680.5" y="531.5"/>
+        </scene>
+        <!--Detail View-->
+        <scene sceneID="iC6-7e-EsY">
+            <objects>
+                <viewController id="1Gn-th-Qar" customClass="ViewController" customModule="Getting_Started_with_3D_Touch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IAM-Mr-Ypl"/>
+                        <viewControllerLayoutGuide type="bottom" id="UBy-my-r9e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X7y-zs-ylQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image.png" translatesAutoresizingMaskIntoConstraints="NO" id="3vI-Wz-Tpr">
+                                <rect key="frame" x="62" y="209" width="250" height="250"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="3oE-3R-Rab"/>
+                                    <constraint firstAttribute="width" constant="250" id="rof-jM-UbE"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.47450980392156861" green="0.82745098039215681" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3vI-Wz-Tpr" firstAttribute="centerY" secondItem="X7y-zs-ylQ" secondAttribute="centerY" id="Cr5-Qs-B5h"/>
+                            <constraint firstItem="3vI-Wz-Tpr" firstAttribute="centerX" secondItem="X7y-zs-ylQ" secondAttribute="centerX" id="WUD-Xp-1Cw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detail View" id="fOV-s7-Cyr"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jpc-aX-icG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2201.5" y="531.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="49c-6w-qGm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fvI-Ap-Cia" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="m7D-qs-QcH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Pbc-3U-L3x" kind="relationship" relationship="rootViewController" id="svO-DC-UPN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yH6-GT-1Ln" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1151" y="532"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image.png" width="500" height="500"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="sU9-hg-4B1"/>
+    </inferredMetricsTieBreakers>
+</document>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A278b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3D Touch Example" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuy-KK-6UH">
+                                <rect key="frame" x="54" y="309" width="266" height="49"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="Jrw-cp-8o6"/>
+                                    <constraint firstAttribute="width" constant="266" id="oLg-Kq-hef"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Syncode Software Ltd." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UF6-Jr-N3q">
+                                <rect key="frame" x="49" y="358" width="277" height="37"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="37" id="9tp-V2-tAm"/>
+                                    <constraint firstAttribute="width" constant="277" id="FDZ-I6-SGj"/>
+                                    <constraint firstAttribute="height" constant="37" id="II8-Me-Sn2"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="277" id="zJT-PL-Xpi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9tp-V2-tAm"/>
+                                        <exclude reference="zJT-PL-Xpi"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="http://syncode.io" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mT-4P-5Cj">
+                                <rect key="frame" x="49" y="622" width="277" height="37"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="277" id="17y-GE-OoA"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="277" id="E7H-kH-lm2"/>
+                                    <constraint firstAttribute="height" constant="37" id="FoW-JH-5tb"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="37" id="KSz-Z5-9Dm"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="37" id="dyM-SV-SO4"/>
+                                    <constraint firstAttribute="width" constant="277" id="uJc-Sp-4uy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="17y-GE-OoA"/>
+                                        <exclude reference="E7H-kH-lm2"/>
+                                        <exclude reference="KSz-Z5-9Dm"/>
+                                        <exclude reference="dyM-SV-SO4"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UF6-Jr-N3q" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="AQ9-rk-5ud"/>
+                            <constraint firstItem="UF6-Jr-N3q" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="331" id="Drs-V0-8IV"/>
+                            <constraint firstItem="kuy-KK-6UH" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="G02-px-o60"/>
+                            <constraint firstItem="kuy-KK-6UH" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Wra-rv-4Vr"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="9mT-4P-5Cj" secondAttribute="bottom" constant="8" id="cBI-RA-xbp"/>
+                            <constraint firstItem="9mT-4P-5Cj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ccF-66-uLn"/>
+                            <constraint firstItem="UF6-Jr-N3q" firstAttribute="top" secondItem="kuy-KK-6UH" secondAttribute="bottom" id="lqF-Lx-ARV"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Drs-V0-8IV"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.5" y="374.5"/>
+        </scene>
+    </scenes>
+</document>
